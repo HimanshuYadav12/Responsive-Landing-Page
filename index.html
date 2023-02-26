@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="desk">
+            <ul>
+                <li>Home</li>
+                <li>Login</li>
+                <li>Signup</li>
+            </ul>
+        </nav>
+
+        <nav class="mob">
+            <div class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>Login</li>
+                <li>Signup</li>
+            </ul>
+        </nav>
+
+        <div class="banner-content">
+            <h1>Respect The Fish</h1>
+            <p>I don't go fishing to escape my life,<br /> I go fishing to live my life.</p>
+            <div class="btn">VIEW MORE</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sub-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ipsa, ea, sit aperiam a debitis aspernatur tempore amet in
+                iure iusto fugiat quia? Animi quam officiis doloremque
+                aperiam obcaecati incidunt minima!
+            </p>
+        </div>
+        <div class="middle">
+            <div class="inner-container">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nisi laudantium libero vero rem impedit sapiente quisquam
+                    dolor nobis eius veritatis sed delectus dicta, cupiditate
+                    iusto quis rerum mollitia, corrupti alias.
+                </p>
+            </div>
+            <div class="inner-container">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nisi laudantium libero vero rem impedit sapiente quisquam
+                    dolor nobis eius veritatis sed delectus dicta, cupiditate
+                    iusto quis rerum mollitia, corrupti alias.
+                </p>
+            </div>
+        </div>
+        <div class="sub-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ipsa, ea, sit aperiam a debitis aspernatur tempore amet in
+                iure iusto fugiat quia? Animi quam officiis doloremque
+                aperiam obcaecati incidunt minima!
+            </p>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    $(document).ready(function () {
+        $(".hamburger-btn .fa-times").hide();
+
+        $(".hamburger-btn .fa-bars").click(function () {
+            $(this).hide();
+            $(".hamburger-btn .fa-times").show();
+            $(".mob ul").addClass("active");
+        });
+        $(".hamburger-btn .fa-times").click(function () {
+            $(this).hide();
+            $(".hamburger-btn .fa-bars").show();
+            $(".mob ul").removeClass("active");
+        });
+    });
+</script>
+
+</html>
